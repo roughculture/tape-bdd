@@ -36,7 +36,7 @@ test('test-bdd', function(it, describe) {
     assert.skip();
   });
 
-  describe('inequality', function(it) {
+  describe('inequality', function(it, describe) {
     it('should compare things invertedly', function(assert) {
       // cause' that's totally a word
       assert.notEqual('ten', 'twenty');
@@ -51,7 +51,7 @@ test('test-bdd', function(it, describe) {
       // bad things happen.
     });
 
-    describe('deeper equality', function() {
+    describe('deeper equality', function(it) {
       it('should go deeeper', function(assert) {
         assert.deepEqual({foo: 10}, {foo: 10});
         // "you're so uptight!"
@@ -94,3 +94,5 @@ test('meta', function(it) {
     }, /hi/);
   });
 });
+
+test.skip('skipped', function() {});
