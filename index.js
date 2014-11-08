@@ -140,8 +140,8 @@ function makeAsserter(t, msg) {
 
   assert.notLooseEqual =
   assert.notLooseEquals =
-  assert.notDeepLooseEqual = function(actual, expected) {
-    t.notDeepLooseEqual(actual, expected, msg);
+  assert.notDeepLooseEqual = function() {
+    t.fail('see https://github.com/substack/tape/pull/116');
   };
 
   assert.throws = function(actual, expected) {
