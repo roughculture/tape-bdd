@@ -9,7 +9,7 @@ test('test-bdd', function(it, describe) {
   });
 
   it('apparently already handles them', function(assert) {
-    assert.not(1, 2);
+    assert.equal(1, 1);
   });
 
   describe('nested suites', function(it) {
@@ -79,6 +79,10 @@ test('meta', function(it) {
         it('should fail because substack doesn\'t write creditable tests',
            function(assert) {
           assert.notDeepLooseEqual({foo: '10'}, {foo: 'ten'});
+        });
+
+        it('should fail on purpose', function(assert) {
+          assert.fail();
         });
       }, function() {
         var htest = tape.createHarness();
