@@ -1,0 +1,5 @@
+language: node_js
+script: npm test && npm run report
+node_js:
+  - '0.11'
+  - '0.10'
