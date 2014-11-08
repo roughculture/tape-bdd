@@ -1,0 +1,38 @@
+{
+  "name": "tape-bdd",
+  "version": "0.0.1",
+  "description": "BDD-style wrapper for tape",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "npm run lint && istanbul cover test --report lcovonly",
+    "report": "coveralls < ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/roughculture/tape-bdd.git"
+  },
+  "keywords": [
+    "mocha",
+    "bdd",
+    "test",
+    "harness",
+    "assert",
+    "tap",
+    "tape"
+  ],
+  "author": "Tenor Biel <tenorbiel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roughculture/tape-bdd/issues"
+  },
+  "homepage": "https://github.com/roughculture/tape-bdd",
+  "dependencies": {
+    "tape": "^3.0.2"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.2",
+    "jshint": "^2.5.10"
+  }
+}
