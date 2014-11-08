@@ -132,12 +132,14 @@ function makeAsserter(t, msg) {
     t.notDeepEqual(actual, expected, msg);
   };
 
-  assert.notLooseEqual =
-  assert.notLooseEquals =
+  assert.looseEqual =
+  assert.looseEquals =
   assert.deepLooseEqual = function(actual, expected) {
     t.deepLooseEqual(actual, expected, msg);
   };
 
+  assert.notLooseEqual =
+  assert.notLooseEquals =
   assert.notDeepLooseEqual = function(actual, expected) {
     t.notDeepLooseEqual(actual, expected, msg);
   };
