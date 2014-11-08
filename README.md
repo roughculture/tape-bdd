@@ -1,4 +1,4 @@
-tape-bdd [![Build Status](http://img.shields.io/travis/roughculture/tape-bdd.svg?style=flat)](https://travis-ci.org/roughculture/tape-bdd) [![NPM Version](http://img.shields.io/npm/v/tape-bdd.svg?style=flat)](https://npmjs.org/package/tape-bdd) [![License](http://img.shields.io/npm/l/tape-bdd.svg?style=flat)](https://github.com/roughculture/tape-bdd/blob/master/LICENSE)
+tape-bdd [![Build Status](http://img.shields.io/travis/roughculture/tape-bdd.svg?style=flat)](https://travis-ci.org/roughculture/tape-bdd) [![NPM Version](http://img.shields.io/npm/v/tape-bdd.svg?style=flat)](https://npmjs.org/package/tape-bdd) [![License](http://img.shields.io/npm/l/tape-bdd.svg?style=flat)](https://github.com/roughculture/tape-bdd/blob/master/LICENSE) [![Coverage Status](https://img.shields.io/coveralls/roughculture/tape-bdd.svg?style=flat)](https://coveralls.io/r/roughculture/tape-bdd?branch=master)
 ========
 
 Tape-BDD essentially wraps tape and provides a more Mocha-style interface for
