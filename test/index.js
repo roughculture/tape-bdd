@@ -61,10 +61,6 @@ test('test-bdd', function(it, describe) {
         assert.deepLooseEqual({foo: '10'}, {foo: 10});
       });
 
-      it('can be loose but negated?', function(assert) {
-        assert.notDeepLooseEqual({foo: '10'}, {foo: 'ten'});
-      });
-
       it.skip('should not forget to be redundant', function(assert) {
         assert.fail('hahaha');
       });
@@ -78,6 +74,11 @@ test('meta', function(it) {
       test('unknown', function(it) {
         it('should fail', function() {
           throw new Error('haha');
+        });
+
+        it('should fail because substack doesn\'t write creditable tests',
+           function(assert) {
+          assert.notDeepLooseEqual({foo: '10'}, {foo: 'ten'});
         });
       }, function() {
         var htest = tape.createHarness();
