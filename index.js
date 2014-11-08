@@ -49,6 +49,7 @@ exports.skip = function(name, harness) {
   });
 };
 
+/* istanbul ignore next */
 exports.only = function(name, harness) {
   exports(name, harness, function() {
     tape.only.apply(tape, arguments);
